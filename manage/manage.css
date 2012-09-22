@@ -1,0 +1,91 @@
+body {
+	margin:0px;
+	background-color: #f0f0f0;
+}
+.HeadMenu
+{
+  background-color:#0F50BE;
+  font-family: "����";
+  font-size:10pt;
+  font-weight:bold;
+  color:#FFFFFF;
+  height:22px;
+}
+.HeadSubMenuText
+{
+ font-family: "����";
+ font-size:10pt;
+ font-weight:bold;
+ color:#000000;
+ text-decoration:none;
+ 
+}
+
+.SubMenuBG
+{
+ background-color:#D6DFF7;
+}
+.MainMenuText
+{
+ font-family: "����";
+ font-size:10pt;
+ font-weight:bold;
+ color:#215DC6;
+ height:20px;
+}
+.SubMenuText
+{
+ font-family: "����";
+ font-size:10pt;
+ color:#000000;
+ text-decoration:none;
+}
+.FormCaption
+{
+ font-family: "����";
+ font-size:11pt;
+ font-weight:bold;
+ color:#FFFFFF;
+ height:24px;
+}
+.FormLabel
+{
+ font-family: "����";
+ font-size:10pt;
+ font-weight:bold;
+ height:20px;
+ background-color:#D7D7D7;
+}
+.TableHead
+{
+	
+	background: #e8e8e8;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+.TableTdCaption
+{
+	background: gray;
+	color: #ffffff;
+	font-size:10pt;
+	height:18px
+}
+.TableTd
+{
+	background:#DADADA;
+	color:#000000;
+    font-size:10pt;
+}
+.CommandBtn
+{
+	font-size:10pt;
+	height:18px
+}
+.OpacityDiv
+{
+   opacity: 0.4;                /* Firefox, Safari(WebKit), Opera) */
+   filter: "alpha(opacity=40)"; /* IE 8 */
+   filter: alpha(opacity=40);   /* IE 4-7 */
+   zoom: 1;                     /* needed in IE up to version 7, or set width or height to trigger "hasLayout" */ 
+}

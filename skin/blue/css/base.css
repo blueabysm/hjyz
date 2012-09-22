@@ -1,0 +1,38 @@
+*{margin:0px; padding:0px;}
+
+body {font-size: 12px;line-height:22px;list-style:none;margin:0px;padding:0px; background-color: #DFDFDF;background-repeat: repeat-x; color:#666;}
+
+/*
+body {font-size: 12px;line-height:22px;list-style:none;margin:0px;padding:0px; background-color: #a80909;background-image: url(../images/jiandang.jpg);background-repeat:no-repeat; color:#666;}
+*/
+img{ border:0px;}
+
+html, body, div, h1, h2, ul, li, p, form, table, tr, td, img {margin:0;padding:0}  
+li{list-style:none;overflow:hidden}
+select, input, img {vertical-align:middle; border:0px;}
+select, input, textarea{font-size:12px;}
+
+.f_l{float:left;}
+.f_r{float:right;}
+
+
+a {	color: #000;text-decoration:none;}
+a:link, a:visited {	text-decoration:none; color:#000;}
+a:hover, a:active {	color:#f37d0a; text-decoration:underline;}
+
+
+
+.blue {color: #4280ad}
+.blue a:visited {color: #4280ad}
+.blue a:hover {	color: #ea5504}
+.red {color: #d63801}
+.red a:visited {color: #d63801}
+.red a:hover {color: #d63801}
+.orange {color: #ff7800}
+.orange a:visited {color: #ff7800}
+.orange a:hover {color: #ff7800}
+.gray {color: #7c7d7b}
+.gray a:visited {color: #7c7d7b}
+.gray a:hover {color: #7c7d7b}
+
+

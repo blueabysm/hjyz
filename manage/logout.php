@@ -1,0 +1,12 @@
+<?php
+unset($_SESSION['sess_user_id']);
+unset($_SESSION['sess_user_name']);
+unset($_SESSION['sess_user_type']);		
+unset($_SESSION['sess_user_realname']);
+unset($_SESSION['sess_user_company']);
+unset($_SESSION['sess_user_sub_id']);
+unset($_SESSION['sess_user_purview']);
+?>
+<script>
+ window.top.location="login.php";
+</script>;  
