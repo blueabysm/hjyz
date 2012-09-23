@@ -47,7 +47,7 @@ class DBManager
                     $isComment = false;
                     foreach($commenter as $comer)
                     {
-                        if(eregi("^(".$comer.")",trim($subSentence)))
+                        if(preg_match("/^(".$comer.")/",trim($subSentence)))
                         {
                             $isComment = true;
                             break;
@@ -154,13 +154,13 @@ class DBManager
         {
             foreach($sqlFlagTree as $flag => $v)
             {    
-                if(eregi($flag,$tokens[$tokensKey]))
+                if(preg_match('/' . $flag . '/',$tokens[$tokensKey]))
                 {
                     if(0==$v)
                     {
                         $tableName['name'] = $tokens[$tokensKey];
             
-                        if(eregi($regxLeftWall,$tableName['name']))
+                        if(preg_match('/' . $regxLeftWall . '/',$tableName['name']))
                         {
                             $tableName['leftWall'] = $tableName['name']{0};
                         }
@@ -168,7 +168,7 @@ class DBManager
                         return true;
                     }
                     else{
-                        return self::findTableName($v,$tokens,$tokensKey+1,& $tableName);
+                        return self::findTableName($v,$tokens,$tokensKey+1,$tableName);
                     }
                 }
             }
@@ -341,7 +341,7 @@ if(!$shorttag)
 	//安装完毕
 	elseif($ecn=="success")
 	{
-        chmod(getcwd(), 0777);
+        @chmod(getcwd(), 0777);
 		//锁定安装程序
 		$fp=@fopen("install.off","w");
 		@fclose($fp);

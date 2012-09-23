@@ -48,7 +48,8 @@ if(strlen($myPageClass->toURL)>=1){
 						<td class="TableTdCaption" width="15%" align="center">添加者</td>
 						<td class="TableTdCaption" width="10%" align="center">操作</td>
 					</tr>
-					<?php					
+					<?php
+    file_put_contents('/Users/blueabysm/www/from-renjuan/logs/debug.log', print_r(articleList, true));
 					for ($i=0;$i<count($myPageClass->articleList);$i++)
 					{
 						if ( ($i % 2) == 0){
